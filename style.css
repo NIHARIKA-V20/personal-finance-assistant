@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00796b;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #004d40;
+}
+
+.upload-box {
+  display: block;
+  background-color: #e0f2f1;
+  padding: 1rem;
+  border: 2px dashed #80cbc4;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: #00796b;
+  font-weight: bold;
+  position: relative;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #004d40;
+  color: white;
+}
+
+canvas {
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.insight-box {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #fff8e1;
+  color: #795548;
+  border-left: 8px solid #fbc02d;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+
+/* === Landing Page Styles === */
+
+body.landing {
+  background: linear-gradient(to right, #00bcd4, #4caf50);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo {
+  width: 400px;
+  margin-bottom: 1rem;
+  animation: zoomIn 1s ease-in-out;
+}
+
+.enter-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  color: #00796b;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.enter-btn:hover {
+  background-color: #eeeeee;
+  transform: translateY(-2px);
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+body.dashboard-body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  height: 100vh;
+  background: #f0f4f8;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #00796b;
+  color: white;
+  padding: 2rem 1rem;
+  height: 100vh;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.sidebar ul li:hover {
+  background-color: #004d40;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.upload-box {
+  display: block;
+  background: #e0f2f1;
+  border: 2px dashed #80cbc4;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem 0;
+  cursor: pointer;
+  color: #00796b;
+  font-weight: bold;
+  position: relative;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.table-section th, .table-section td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table-section th {
+  background-color: #004d40;
+  color: white;
+}
+
+.chart-section {
+  margin-top: 2rem;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.insight-box {
+  margin-top: 2rem;
+  background: #fff3cd;
+  color: #856404;
+  padding: 1rem;
+  border-left: 8px solid #ffc107;
+  border-radius: 10px;
+  font-weight: 600;
+}
+

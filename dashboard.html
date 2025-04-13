@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-wallet"></i> Personal Finance Assistant</h1>
+
+    <label for="csvFile" class="upload-box">
+      <i class="fas fa-file-upload"></i> Upload CSV File
+      <input type="file" id="csvFile" accept=".csv" />
+    </label>
+
+    <div id="tableContainer"></div>
+
+    <h2>📊 Spending by Category</h2>
+    <canvas id="categoryChart"></canvas>
+
+    <div id="insightBox" class="insight-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
